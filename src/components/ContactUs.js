@@ -11,15 +11,25 @@ export default class ContactUs extends Component {
               </p>
             </div>
           </div>
-          <div className="row">
-            <aside className="eigth columns footer-widgets">
-              <div className="widget">
-                <h4>Linked in :
-                  {resumeData.linkedinId}
-                </h4>
+          <footer>
+            <div className="row">
+              <div className="twelve columns">
+                <ul className="social-links">
+                  {
+                    resumeData.socialLinks && resumeData.socialLinks.map((item)=>{
+                      return(
+                        <li key={item.className}>
+                          <a href={item.url}>
+                          <i className={item.className} />
+                          </a>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
               </div>
-            </aside>
-          </div>
+            </div>
+          </footer>
         </section>
         );
   }

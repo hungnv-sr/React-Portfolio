@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   /* background: #161415 url(../images/header-background.jpg) no-repeat top center; */
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -52,11 +52,15 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
-header .banner-text { width: 100%; }
+header .banner-text { 
+   width: 100%; 
+   color: #fff;
+   font: 'sans-serif'
+}
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
@@ -345,15 +349,40 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.html5-css {
+  	width: 50%;
+  	-moz-animation: html5-css 2s ease;
+  	-webkit-animation: html5-css 2s ease;
 }
 .jquery {
   	width: 50%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
+}
+.python {
+   width: 75%;
+   -moz-animation: python 2s ease;
+   -webkit-animation: python 2s ease;
+}
+.php {
+   width: 90%;
+   -moz-animation: php 2s ease;
+   -webkit-animation: php 2s ease;
+}
+.javascript {
+   width: 90%;
+   -moz-animation: javascript 2s ease;
+   -webkit-animation: javascript 2s ease;
+}
+.reactjs {
+   width: 90%;
+   -moz-animation: reactjs 2s ease;
+   -webkit-animation: reactjs 2s ease;
+}
+.aws {
+   width: 90%;
+   -moz-animation: aws 2s ease;
+   -webkit-animation: aws 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -372,14 +401,30 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes html5-css {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 50%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+@-moz-keyframes python {
+   0%   { width: 0px;  }
+   100% { width: 75%;  }
+ }
+@-moz-keyframes php {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+@-moz-keyframes javascript {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+@-moz-keyframes aws {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
 
 @-webkit-keyframes photoshop {
   0%   { width: 0px;  }
@@ -397,13 +442,60 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes jquery {
+@-webkit-keyframes html5-css {
   0%   { width: 0px;  }
   100% { width: 50%;  }
+}
+@-webkit-keyframes javascript {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes python {
+   0%   { width: 0px;  }
+   100% { width: 75%;  }
+ }
+ @-webkit-keyframes php {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+ @-webkit-keyframes jquery {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @-webkit-keyframes reactjs {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+ @-webkit-keyframes aws {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+
+ /* ------------------------------------------------------------------ */
+/* d2. Cert Section
+/* ------------------------------------------------------------------ */
+
+#cert {
+   background: rgb(208, 208, 208);
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#cert h1 {
+   font: 20px/26px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#cert h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#cert .credly {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
 }
 
 /* ------------------------------------------------------------------ */
@@ -411,7 +503,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background: #ffffff;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -639,7 +731,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background: #1F1F1F url(../images/pepe-background.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
@@ -802,7 +894,7 @@ call-to-action .button {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #EBEEEE;
+   color: #ffffff;
    margin-bottom: 6px;
 }
 #contact h1 span { display: none; }
@@ -823,8 +915,9 @@ call-to-action .button {
    margin-bottom: 6px;
 }
 #contact p.lead {
-   font: 18px/36px 'opensans-light', sans-serif;
+   font: 20px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
+   font-weight: bold;
 }
 #contact .header-col { padding-top: 6px; }
 
@@ -845,7 +938,6 @@ call-to-action .button {
    padding: 18px 20px;
 	color: #eee;
 	background: #373233;
-	margin-bottom: 42px;
 	border: 0;
 	outline: none;
    font-size: 15px;
@@ -935,7 +1027,7 @@ footer {
 
 footer a, footer a:visited { color: #525252; }
 footer a:hover, footer a:focus { color: #fff; }
-
+footer p { color: #fff; }
 /* copyright */
 footer .copyright {
     margin: 0;
