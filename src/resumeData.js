@@ -96,7 +96,7 @@ let resumeData = {
       {
         "name":"yell",
         "description":"web/mobile app",
-        "imgurl":"images/portfolio/yell.png",
+        "imgurl":"images/portfolio/yumekanayell.png",
         "weburl":"https://yumekanayell.com/"
       },
       {
