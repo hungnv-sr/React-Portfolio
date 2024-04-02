@@ -370,7 +370,7 @@ ul#nav li.current a { color: #F06000; }
    -webkit-animation: php 2s ease;
 }
 .javascript {
-   width: 90%;
+   width: 80%;
    -moz-animation: javascript 2s ease;
    -webkit-animation: javascript 2s ease;
 }
@@ -383,6 +383,11 @@ ul#nav li.current a { color: #F06000; }
    width: 90%;
    -moz-animation: aws 2s ease;
    -webkit-animation: aws 2s ease;
+}
+.linux {
+   width: 90%;
+   -moz-animation: linux 2s ease;
+   -webkit-animation: linux 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -419,11 +424,16 @@ ul#nav li.current a { color: #F06000; }
  }
 @-moz-keyframes javascript {
    0%   { width: 0px;  }
-   100% { width: 90%;  }
+   100% { width: 80%;  }
  }
 @-moz-keyframes aws {
    0%   { width: 0px;  }
    100% { width: 80%;  }
+ }
+
+@-moz-keyframes linux {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
  }
 
 @-webkit-keyframes photoshop {
@@ -448,7 +458,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes javascript {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes python {
    0%   { width: 0px;  }
@@ -467,6 +477,10 @@ ul#nav li.current a { color: #F06000; }
    100% { width: 90%;  }
  }
  @-webkit-keyframes aws {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+ @-webkit-keyframes linux {
    0%   { width: 0px;  }
    100% { width: 90%;  }
  }
@@ -528,6 +542,8 @@ ul#nav li.current a { color: #F06000; }
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+   display: block;
+   cursor: pointer;
 }
 .portfolio-item .item-wrap a {
    display: block;

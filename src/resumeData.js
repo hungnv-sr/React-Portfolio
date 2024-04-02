@@ -1,15 +1,15 @@
 let resumeData = {
     "imagebaseurl":"https://hungnv.net/",
-    "name": "Hùng Nguyen",
+    "name": "Hung Nguyen",
     "role": [
-      "DevOps Engineer", 
+      "DevOps Engineer",
       "Software Engineer",
       "SysOps",
       "Site Reliability Engineer"
     ],
     "linkedinId":"Your LinkedIn Id",
-    "personalDescription": "I am Hung Nguyen, an reliable, responsible, blah blah blah <insert positive employee traits> person",
-    "interests":"I'm enthusiastic about learning and practicing new technology. Recently, I'm feeling like helping people with my knowledge albeit limited. In the free time, I love hitting  the gym or playing video games",
+    "personalDescription": "Hi, I am Hung Nguyen",
+    "interests":"My professional pursuits are marked by an eagerness to learn and apply new technologies within cloud engineering. While my expertise continues to evolve, I am motivated to assist others using my current knowledge base. In the free time, I love hitting  the gym and playing video games",
     "socialLinks":[
         {
           "name":"linkedin",
@@ -23,11 +23,16 @@ let resumeData = {
         },
         {
           "name":"facebook",
-          "url":"https://www.facebook.com/4kFrederick/",
+          "url":"https://www.facebook.com/nvuxhung/",
           "className":"fa fa-facebook"
+        },
+        {
+          "name":"email",
+          "url":"mailto:hungnvdotnet@gmail.com",
+          "className":"fa fa-envelope"
         }
       ],
-    "aboutme":"Experienced in managing, developing, monitoring websites and applications",
+    "aboutme":"With more than five years of professional experience, my expertise encompasses managing, developing, operating and monitoring web applications. I'm also a seasoned AWS Solutions Architect who can design highly available and scalabe applications",
     "address":"VietNam",
     "website":"https://hungnv.net/",
     "education":[
@@ -44,20 +49,29 @@ let resumeData = {
         "id":1,
         "CompanyName":"Neos Company",
         "specialization":"Software Developer",
-        "MonthOfLeaving":"May",
-        "YearOfLeaving":"2019",
+        "MonthOfStarting":"Jan",
+        "YearOfStarting":"2019",
+        "MonthOfEnding":"June",
+        "YearOfEnding" : "2019",
       },
       {
         "id":2,
         "CompanyName":"AI-T Inc",
         "specialization":"Software Developer/Devops",
-        "Achievements":"Multiple achivements"
+        // "Achievements":"Multiple achivements",
+        "MonthOfStarting":"June",
+        "YearOfStarting":"2019",
+        // "MonthOfEnding": "June",
+        "YearOfEnding" : "current",
       }
     ],
     "skillsDescription":"My most used technical skills",
     "skills":[
       {
         "skillname":"AWS"
+      },
+      {
+        "skillname":"Linux",
       },
       {
         "skillname":"Javascript",
@@ -107,7 +121,7 @@ let resumeData = {
       },
       {
         "name":"mebook",
-        "description":"web/mobile app",  
+        "description":"web/mobile app",
         "imgurl":"images/portfolio/mebook.png",
         "weburl":"https://mebook.jp/"
       },
