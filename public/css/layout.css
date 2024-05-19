@@ -428,7 +428,7 @@ ul#nav li.current a { color: #F06000; }
  }
 @-moz-keyframes aws {
    0%   { width: 0px;  }
-   100% { width: 80%;  }
+   100% { width: 90%;  }
  }
 
 @-moz-keyframes linux {
